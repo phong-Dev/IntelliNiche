@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 html,
@@ -15,6 +16,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
 
 ::-webkit-scrollbar {
 	width: 1.2rem;
@@ -41,3 +43,7 @@ a {
 
 /* -------------About-homepage-------- */
 @import url('./about_homepage.css');
+
+/* ----------Footer---------------- */
+@import url('./footerstyles.css');
+
