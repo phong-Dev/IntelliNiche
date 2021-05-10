@@ -41,12 +41,12 @@ const Navbar = () => {
           <div className="d-flex">
             <Link href="/" onClick={closeMobileMenu}>
               <a className="navbar-logo">
-              <Image
-        src="/picture/logo.svg"
-        alt="logo"
-        width={69}
-        height={66}
-      />
+                <Image
+                  src="/picture/logo.svg"
+                  alt="logo"
+                  width={69}
+                  height={66}
+                />
               </a>
             </Link>
           </div>
