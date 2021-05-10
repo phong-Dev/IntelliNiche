@@ -1,0 +1,129 @@
+header{
+    background-image: url('/picture/header.png');
+      background-size: cover;
+      background-position: top left;
+      position: relative;
+      z-index: 1;
+      height: 150vh;
+    text-align: center;
+  }
+  
+  header:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  
+  header::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: .7;
+      z-index: -1;
+  }
+  
+  header .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+  
+  }
+  
+  header .banner h1{
+    color: #fff;
+  }
+  
+  header .banner-text {
+    width: 100%;
+    text-transform: capitalize;
+  }
+  
+  header .scrolldown {
+    margin-bottom: 0;
+  }
+  
+  header .scrolldown a {
+      cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -1rem;
+    color: #fff;
+    display: block;
+    height: 42px;
+    width: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    color: #fff;
+    border-radius: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  header .scrolldown a span {
+    display: flex;
+    margin: auto;
+  width: 30px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  position: relative;
+  }
+  header .scrolldown a span::before {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  }
+  @keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  }

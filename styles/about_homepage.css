@@ -1,0 +1,9 @@
+#about .about__description{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  
+  #about .about__description--width{
+    width: 75%;
+  }
