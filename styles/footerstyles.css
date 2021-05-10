@@ -1,0 +1,29 @@
+/* .col-md-4 {
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+  } */
+.footer4 {
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+.footer8 {
+    border-bottom: 2px solid gray;
+}
+.iconthree{
+    float: right;
+  }
+
+.footercontainer {
+    margin: 20px;
+}
+
+
+#footerlogo {
+    margin-left: 100px;
+}
+@media screen and (max-width:960px) {
+    #footerlogo {
+        margin-left: 0px;
+    }
+}
