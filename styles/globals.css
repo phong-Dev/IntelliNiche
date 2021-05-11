@@ -44,6 +44,18 @@ a {
 /* -------------About-homepage-------- */
 @import url('./about_homepage.css');
 
+/* -------------Partner-homepage-------- */
+@import url('./partner_homepage.css');
+
+/* -------------Service-homepage-------- */
+@import url('./service_homepage.css');
+
+/* -------------OurWork-homepage-------- */
+@import url('./ourwork_homepage.css');
+
 /* ----------Footer---------------- */
 @import url('./footerstyles.css');
+
+/* ----------Button---------------- */
+@import url('./button.css');
 
