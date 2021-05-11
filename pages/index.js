@@ -62,7 +62,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
       {/* ------------end about------------- */}
+      {/* ------------contact--------------- */}
+      <div>
+      <Title title="CONTACT" />
+            <form className="formContact">
+              <input type="text" className="form-control"  name="name" placeholder="ENTER YOUR NAME*"/>
+              <input type="text" className="form-control"  name="email" placeholder="ENTER YOUR EMAIL"/>
+              <input type="text" className="form-control"  name="phone" placeholder="PHONE NUMBER"/>
+              <textarea type="textarea" rows="3" className="form-control"  name="message" placeholder="YOUR MESSAGE*"/>
+              <button class="w3-btn w3-white w3-border w3-border-red w3-round-large">Submit</button>
+            </form>
+
+            <section className="text-center">
+              <div  className="py-4">
+                <h5><b>Interested in discussing a project?</b></h5>
+                <h5>Let’s build something great.</h5>
+                <button class="w3-button w3-white w3-round-xxlarge">Get in Touch</button>
+              </div>
+            </section>
+        </div>
     </>
   );
 }

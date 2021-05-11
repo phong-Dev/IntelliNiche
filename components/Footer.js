@@ -65,6 +65,7 @@ const Footer = () => {
     //     </span>
     //   </div>
     // </footer>
+    
     <footer>
       <div className="container">
         <div className="row">
