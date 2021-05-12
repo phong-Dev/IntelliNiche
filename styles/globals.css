@@ -75,3 +75,6 @@ a {
 /* ----------Get in touch------------*/
 @import url('./about_styles.css');
 
+/* ----------Hero service------------*/
+@import url('./hero_service.css');
+
