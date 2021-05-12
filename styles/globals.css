@@ -66,4 +66,12 @@ a {
 @import url('./getintouch_homepage.css');
 
 
+/* -------------Hero-about-------- */
+@import url('./hero_about.css');
+
+/* -------------People-about-------- */
+@import url('./people_about.css');
+
+/* ----------Get in touch------------*/
+@import url('./about_styles.css');
 
