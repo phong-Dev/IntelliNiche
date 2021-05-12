@@ -78,3 +78,6 @@ a {
 /* ----------Hero service------------*/
 @import url('./hero_service.css');
 
+/* ----------service------------*/
+@import url('./service.css');
+
