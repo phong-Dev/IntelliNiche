@@ -39,7 +39,7 @@ const Service = () => {
                 height={180}
               />
                 </div>
-                <div className="info-service">
+                <div className="info-service info-service-special">
                   <h3>Backend Web Development Powering your applications</h3>
                   <p>
                   Rock-solid, reliable backend development ensures your business logic works as it
@@ -66,7 +66,7 @@ const Service = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-5 text-center">
+            <div className="col-md-5 text-center img-service-special">
               <Image
                 src="/picture/backend.svg"
                 alt="backend"
@@ -127,47 +127,7 @@ const Service = () => {
         </div>
       </section>
       
-      {/* <div>
-        <div className="container">
-          <div className="row divservice1">
-            <div className="col-md-6 serviceground1">
-              <h1>Backend Web Development Powering your applications</h1><br/>
-              <p>Rock-solid, reliable backend development ensures your business logic works as it</p><br/>
-              {button && <Button buttonStyle="btn--black" className="buttonservice1">API Development</Button>}&emsp;
-              {button && <Button buttonStyle="btn--black" className="buttonservice1">Database Development</Button>}<br/>
-              {button && <Button buttonStyle="btn--black" className="buttonservice1">Django Development</Button>}&emsp;
-              {button && <Button buttonStyle="btn--black" className="buttonservice1">DevOps Consulting</Button>}<br/>
-              <br/>
-              <p><a href="#"> read more  &rarr;</a></p>
-            </div>
-            <div className="col-md-6 ">
-              <img src="picture/backend.svg"></img>
-            </div>
-          </div>
-
-          <div className="row divservice2">
-            <div className="col-md-6">
-              <img src="picture/frontend.svg"></img>
-            </div>
-            <div className="col-md-6 serviceground1">
-              <h1>Frontend Web Development Interfaces that delight</h1><br/>
-              <p>Fontend development sits at the intersection of 3 pillars: clean code, 
-                beautiful design and intuitive usability. We guarantee all three
-              </p><br/>
-                {button && <Button buttonStyle="btn--black">Angular Development</Button>}&emsp;
-                {button && <Button buttonStyle="btn--black">React Development</Button>}<br/><br/>
-              <p><a href="#"> read more  &rarr;</a></p>
-            </div> 
-          </div>
-
-        </div>
-        
       
-      </div>
-      <div>
-        
-      
-      </div> */}
       {/* --------endbody------------- */}
       
 
