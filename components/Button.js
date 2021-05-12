@@ -1,4 +1,4 @@
-const STYLES = ['btn--primary', 'btn--outline', 'btn--red'];
+const STYLES = ['btn--primary', 'btn--outline', 'btn--red', 'btn--black'];
 
 export const Button = ({
   children,

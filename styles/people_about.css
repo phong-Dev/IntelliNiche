@@ -1,0 +1,57 @@
+#people{
+    padding-bottom: 5rem;
+}
+
+.filter-people{
+    width: 60vw;
+    margin: auto;
+}
+
+.menu-people {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 50px;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  
+  .people-item {
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+
+  .people-item.active {
+    border-bottom: 3px solid red;
+  }
+
+  .view-people{
+    height: 20rem;
+    width: 14rem;
+    background-color: aquamarine;
+    margin: auto;
+    border-radius: 6rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu-people {
+        grid-gap: 20px;
+      }
+  }
+
+  @media screen and (max-width: 425px) {
+    .menu-people {
+        grid-gap: 10px;
+      }
+  }
+
+  @media screen and (max-width: 375px) {
+    .menu-people {
+        grid-gap: 5px;
+      }
+
+      .people-item {
+        padding: 0 0.5rem;
+      }
+  }
