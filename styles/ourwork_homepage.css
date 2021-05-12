@@ -1,0 +1,50 @@
+#our-work{
+    text-align: center;
+  }
+
+.our-work__progress{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10rem;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  
+  .our-work__progress--item{
+    text-transform: capitalize;
+  }
+  
+  #our-work .our-work__description{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 56%;
+    padding-bottom: 7rem;
+    text-align: center;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: red!important;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: black!important;
+    font-weight: bolder!important;
+  }
+  
+  .CircularProgressbar {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 990px) {
+    .our-work__progress{
+      display: block;
+    }
+
+    .our-work__progress--item {
+      width: 10rem;
+      margin: auto;
+  }
+  }

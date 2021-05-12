@@ -1,0 +1,40 @@
+footer{
+    border-top: 2px solid gray;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bottom{
+    border-top: 2px solid gray;
+}
+
+.footer-left{
+    border-right: 2px solid gray;
+}
+
+.footer-link{
+    color: black;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+footer i{
+    font-size: 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    }
+
+    @media screen and (max-width:767px) {
+        .footer-left{
+            border-right: none;
+        }
+    } 

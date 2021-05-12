@@ -1,0 +1,47 @@
+/* .form-control {
+    margin: 40px;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: none;
+    border-right: none;
+}
+.messagecontact {
+    height: 100px;
+    text-align: left;
+}
+.w3-border-red {
+    margin-left: 40px;
+    border: 2px solid red;
+}
+
+.formContact {
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 600px;
+    width: 600px;
+}
+
+@media screen and (max-width:767px) {
+    .formContact {
+        margin: 5px;
+        margin-right: 60px;
+        height: auto;
+        width: auto;
+
+    }
+}  */
+
+.contact-form{
+    width: 50vw;
+    margin: auto;
+}
+
+.contact-form .form-group{
+    margin-bottom: 4rem;
+}
+
+.contact-form .form-control{
+    border: none;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
