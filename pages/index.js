@@ -5,8 +5,8 @@ import Carousel from "react-elastic-carousel";
 import PartnerItem from "../components/PartnerItem";
 import ClientSayItem from "../components/ClientSayItem";
 import ProgressBar from "../components/ProgressBar";
-import { Button } from '../components/Button';
-import { useState } from 'react';
+import { Button } from "../components/Button";
+import { useState } from "react";
 
 export default function Home() {
   const scrollToBottom = () => {
@@ -47,7 +47,7 @@ export default function Home() {
               digital innovation
             </p>
           </div>
-          {button && <Button buttonStyle='btn--outline'>Our Service</Button>}
+          {button && <Button buttonStyle="btn--outline">Our Service</Button>}
         </div>
 
         <p className="scrolldown">
@@ -85,6 +85,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* ------------end about------------- */}
       {/* -------------partner------------- */}
       <section id="partner">
@@ -290,7 +291,7 @@ export default function Home() {
         <ProgressBar />
       </section>
       {/* ---------------end our work------------- */}
-      {/* -------------partner------------- */}
+      {/* -------------client say------------- */}
       <section id="client">
         <Title title="What our client are saying" />
         <Carousel breakPoints={breakPointsClient}>
@@ -344,7 +345,88 @@ export default function Home() {
           </ClientSayItem>
         </Carousel>
       </section>
-      {/* --------------end partner------------ */}
+      {/* --------------end client say------------ */}
+      {/* ------------contact--------------- */}
+      <section id="contact">
+        <Title title="CONTACT" />
+        {/* <form className="contact-form">
+          <input
+            type="text"
+            className="form-control"
+            name="name"
+            placeholder="ENTER YOUR NAME*"
+          />
+          <input
+            type="text"
+            className="form-control"
+            name="email"
+            placeholder="ENTER YOUR EMAIL"
+          />
+          <input
+            type="text"
+            className="form-control"
+            name="phone"
+            placeholder="PHONE NUMBER"
+          />
+          <textarea
+            type="textarea"
+            rows="3"
+            className="form-control"
+            name="message"
+            placeholder="YOUR MESSAGE*"
+          />
+          <button class="btn">
+            Submit
+          </button>
+        </form> */}
+        <div className="contact-form">
+          <form>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control"
+                name="name"
+                placeholder="ENTER YOUR NAME*"
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="email"
+                className="form-control"
+                name="email"
+                placeholder="ENTER YOUR EMAIL*"
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="number"
+                className="form-control"
+                name="phone"
+                placeholder="ENTER YOUR PHONE*"
+              />
+            </div>
+            <div className="form-group">
+              <textarea
+                className="form-control"
+                name="message"
+                rows="3"
+                placeholder="YOUR MESSAGE*"
+              ></textarea>
+            </div>
+
+            {button && <Button buttonStyle="btn--red">Submit</Button>}
+          </form>
+        </div>
+      </section>
+      <section id="getInTouch">
+        <div className="text-center">
+          <h5>
+            <b>Interested in discussing a project?</b>
+          </h5>
+          <h5>Let’s build something great.</h5>
+          {button && <Button buttonStyle="btn--primary">Get in touch</Button>}
+        </div>
+      </section>
     </>
   );
 }

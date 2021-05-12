@@ -59,3 +59,11 @@ a {
 /* ----------Button---------------- */
 @import url('./button.css');
 
+/* ----------Contact------------*/
+@import url('./contact_styles.css');
+
+/* ----------Get in touch------------*/
+@import url('./getintouch_homepage.css');
+
+
+
