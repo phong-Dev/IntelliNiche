@@ -1,0 +1,62 @@
+.service-section{
+    padding: 5rem 0;
+}
+.service-content{
+    height: 21rem;
+    position: relative;
+}
+
+.number-service{
+    position: absolute;
+}
+
+.info-service{
+    width: 26rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.service-button {
+    display: flex;
+}
+
+.service-button button{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+    .service-button {
+        display: block;
+    }
+
+    .info-service{
+        width: 20rem;
+    }
+
+    .number-service{
+        width: 8rem;
+    }
+
+    .info-service-special{
+        bottom: -5rem!important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .img-service-special{
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .info-service{
+        width: 16rem;
+    }
+
+    .number-service{
+        width: 5rem;
+    }
+}

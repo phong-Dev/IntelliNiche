@@ -1,0 +1,15 @@
+.line-title {
+    display: block;
+    height: 5rem;
+    border-bottom: solid 2px #000;
+    text-align: center;
+    margin-bottom:5rem;
+  }
+  
+  .line-title h2 {
+    display: inline-block;
+      background-color: #fff;
+      padding: 0 10px;
+      margin-top: 4rem;
+      text-transform: uppercase;
+  }

@@ -1,0 +1,9 @@
+header#contact{
+    background-image: url('/picture/contact.png');
+      background-size: cover;
+      background-position: top left;
+      position: relative;
+      z-index: 1;
+      height: 150vh;
+    text-align: center;
+  }

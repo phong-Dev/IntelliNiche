@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+	width: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #aaa;
+	border-radius: 99vmax;
+	border: 4px solid #111;
+}
+
+::-webkit-scrollbar-track {
+	background: #111;
+}
+
+/* ------------Navbar------------- */
+@import url('./navbar.css');
+
+/* -------------Hero-homepage-------- */
+@import url('./hero_homepage.css');
+
+/* -------------Line-title-------- */
+@import url('./title.css');
+
+/* -------------About-homepage-------- */
+@import url('./about_homepage.css');
+
+/* -------------Partner-homepage-------- */
+@import url('./partner_homepage.css');
+
+/* -------------Service-homepage-------- */
+@import url('./service_homepage.css');
+
+/* -------------OurWork-homepage-------- */
+@import url('./ourwork_homepage.css');
+
+/* ----------Footer---------------- */
+@import url('./footerstyles.css');
+
+/* ----------Button---------------- */
+@import url('./button.css');
+
+/* ----------Contact------------*/
+@import url('./contact_styles.css');
+
+/* ----------Get in touch------------*/
+@import url('./getintouch_homepage.css');
+
+
+/* -------------Hero-about-------- */
+@import url('./hero_about.css');
+
+/* -------------People-about-------- */
+@import url('./people_about.css');
+
+/* ----------Get in touch------------*/
+@import url('./about_styles.css');
+
+/* ----------Hero service------------*/
+@import url('./hero_service.css');
+
+/* ----------service------------*/
+@import url('./service.css');
+
+/* ----------Hero contact------------*/
+@import url('./hero_contact.css');
+
+/* ----------Map contact------------*/
+@import url('./map_contact.css');
+
