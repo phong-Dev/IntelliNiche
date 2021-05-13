@@ -81,3 +81,9 @@ a {
 /* ----------service------------*/
 @import url('./service.css');
 
+/* ----------Hero contact------------*/
+@import url('./hero_contact.css');
+
+/* ----------Map contact------------*/
+@import url('./map_contact.css');
+

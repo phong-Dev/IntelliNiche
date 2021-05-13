@@ -349,36 +349,7 @@ export default function Home() {
       {/* ------------contact--------------- */}
       <section id="contact">
         <Title title="CONTACT" />
-        {/* <form className="contact-form">
-          <input
-            type="text"
-            className="form-control"
-            name="name"
-            placeholder="ENTER YOUR NAME*"
-          />
-          <input
-            type="text"
-            className="form-control"
-            name="email"
-            placeholder="ENTER YOUR EMAIL"
-          />
-          <input
-            type="text"
-            className="form-control"
-            name="phone"
-            placeholder="PHONE NUMBER"
-          />
-          <textarea
-            type="textarea"
-            rows="3"
-            className="form-control"
-            name="message"
-            placeholder="YOUR MESSAGE*"
-          />
-          <button class="btn">
-            Submit
-          </button>
-        </form> */}
+        
         <div className="contact-form">
           <form>
             <div className="form-group">
