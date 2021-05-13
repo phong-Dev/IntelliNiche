@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Button } from "../components/Button";
 import { useState } from "react";
+import GetInTouch from "../components/GetInTouch";
 const Service = () => {
   const [button, setButton] = useState(true);
     return (
@@ -225,15 +226,9 @@ const Service = () => {
         </div>
       </section>
       {/* ---------end design----------- */}
-      <section id="getInTouch">
-        <div className="text-center">
-          <h5>
-            <b>Interested in discussing a project?</b>
-          </h5>
-          <h5>Let’s build something great.</h5>
-          {button && <Button buttonStyle="btn--primary">Get in touch</Button>}
-        </div>
-      </section>
+      {/* -------------get in touch----------- */}
+      <GetInTouch/>
+      {/* ------------end get in touch-------------- */}
     </>
   );
 };
