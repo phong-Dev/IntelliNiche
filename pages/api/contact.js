@@ -7,8 +7,8 @@ export default async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: "dhphong59cntt@gmail.com",
-      pass: "phong1311",
+      user: process.env.user,
+      pass: process.env.pass,
     },
   });
 
@@ -19,13 +19,14 @@ export default async (req, res) => {
       subject: `Contact form submission from ${name}`,
       html: `<p>You have a new contact form submission</p><br>
       <p><strong>Name: </strong> ${name} </p><br>
+      <p><strong>Email: </strong> ${email} </p><br>
       <p><strong>Phone: </strong> ${phone} </p><br>
       <p><strong>Message: </strong> ${message} </p><br>
 
       `,
     });
 
-    console.log('Message Sent', emailRes.messageId);
+    // console.log('Message Sent', emailRes.messageId);
   } catch (err) {
     console.log(err);
   }

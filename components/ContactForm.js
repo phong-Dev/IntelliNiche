@@ -14,7 +14,7 @@ const ContactForm = () => {
     
     let config = {
       method: "post",
-      url: "https://intelliniche.vercel.app/api/contact",
+      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
         "Content-Type": "application/json",
       },
@@ -23,9 +23,9 @@ const ContactForm = () => {
 
     try {
       const response = await axios(config);
-      console.log(response);
+      console.log(response.status);
       if (response.status == 200) {
-        reset();
+        // reset();
         console.log('Success')
       }
     } catch (err) {}
