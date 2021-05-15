@@ -22,9 +22,9 @@ module.exports = {
     ];
   },
   env: {
-    NEXT_PUBLIC_API_URL: process.env.SERVER,
-    user: process.env.user,
-    pass: process.env.pass,
+    NEXT_PUBLIC_API_URL: 'https://intelliniche.vercel.app',
+    user: 'dhphong59cntt@gmail.com',
+    pass: 'phong1311',
   },
   
 };

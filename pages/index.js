@@ -81,6 +81,7 @@ export default function Home() {
                   alt="team"
                   width={504}
                   height={562}
+                  priority={true}
                 />
               </div>
             </div>
