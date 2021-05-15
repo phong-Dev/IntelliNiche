@@ -41,6 +41,26 @@
     border: 1px solid black;
     font-weight: 500;
   }
+
+  .btn--line {
+    background-color: none; 
+    color: black;
+    border-radius: 0px;
+  }
+
+  .btn--line:hover {
+    border-bottom: 2px solid red;
+  }
+
+  .btn--line:focus {
+    border-bottom: 2px solid red;
+    outline: white!important;
+  }
+
+  .btn--line:active {
+    border-bottom: 2px solid red;
+    outline: none;
+  }
   
   
   .btn--outline:hover {

@@ -3,22 +3,36 @@ import Title from "../components/Title";
 import { Button } from "../components/Button";
 import { useState } from "react";
 import GetInTouch from "../components/GetInTouch";
+import items from './allPeople'
+// import Menu from "../components/Menu";
+import ButtonFilter from "../components/ButtonFilter";
+
+const allCategories = ['All', ...new Set(items.map(item => item.part))];
+
 
 const About = () => {
+  const [menuItem, setMenuItem] = useState(items)
+  const [buttons, setButtons] = useState(allCategories)
   const [button, setButton] = useState(true);
+  const [visible, setVisible] = useState(3)
 
-  const lists = [
-    { id: 1, title: "All" },
-    { id: 2, title: "Product" },
-    { id: 3, title: "Engineering" },
-    { id: 4, title: "Design" },
-  ];
 
-  const [selected, setSelected] = useState(1);
+   //Filter Function
+   const filter = (button) =>{
 
-  const handleColor = (row) => {
-    setSelected(row.id);
-  };
+    if(button === 'All'){
+      setMenuItem(items);
+      return;
+    }
+
+    const filteredData = items.filter(item => item.part ===  button);
+    setMenuItem(filteredData)
+  }
+
+  const showMore = () => {
+    setVisible((prevValue) => prevValue + 3)
+  }
+
 
   return (
     <>
@@ -121,99 +135,45 @@ const About = () => {
       <section id="people">
         <Title title="Our people" />
         <div className="filter-people">
-          <ul className="menu-people">
-            {/* <li ><button value="all" className={click ? "people-item active" : "fas fa-bars"}>All</button> </li>
-            <li ><button value="product" className={click ? "people-item active" : "fas fa-bars"}>Product</button></li>
-            <li><button value="engineering" className={click ? "people-item active" : "fas fa-bars"}>Engineering</button></li>
-            <li><button value="design" className={click ? "people-item active" : "fas fa-bars"}>Design</button></li> */}
+          {/* <ul className="menu-people">
             {lists.map((list) => (
               <li key={list.id}>
                 <button
                   key={list.id}
                   onClick={() => handleColor(list)}
-                  className={ (list.id === selected) ? "people-item active" : "people-item"}>
+                  className={
+                    list.id === selected ? "people-item active" : "people-item"
+                  }
+                >
                   {list.title}
                 </button>
               </li>
             ))}
-          </ul>
+          </ul> */}
+          <ButtonFilter button={buttons} filter={filter} />
         </div>
         <div className="container text-center mt-5">
+          {/* <Menu menuItem={menuItem}/> */}
           <div className="row">
-            <div className="col-md-4 col-sm-6">
-              <div className="view-people">
-              <div class="effect-text">
-          <h3>View</h3>
-
-        </div>
+      {
+        menuItem.slice(0, visible).map((item) => {
+          return (
+            <div key={item.id} className="col-md-4 col-sm-6">
+              <div  className="view-people">
+                <div className="effect-text">
+                  <h3>View</h3>
+                </div>
               </div>
               <div className="info-people mb-5 mt-3">
-                <p>Name</p>
-                <p>Engineering</p>
+                <p>{item.name}</p>
+                <p>{item.part}</p>
               </div>
             </div>
-            <div className="col-md-4 col-sm-6">
-              <div className="view-people">
-              <div class="effect-text">
-          <h3>View</h3>
-
-        </div>
-              </div>
-              <div className="info-people mb-5 mt-3">
-                <p>Name</p>
-                <p>Engineering</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <div className="view-people">
-              <div class="effect-text">
-          <h3>View</h3>
-
-        </div>
-              </div>
-              <div className="info-people mb-5 mt-3">
-                <p>Name</p>
-                <p>Engineering</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <div className="view-people">
-              <div class="effect-text">
-          <h3>View</h3>
-
-        </div>
-              </div>
-              <div className="info-people mb-5 mt-3">
-                <p>Name</p>
-                <p>Engineering</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <div className="view-people">
-              <div class="effect-text">
-          <h3>View</h3>
-
-        </div>
-              </div>
-              <div className="info-people mb-5 mt-3">
-                <p>Name</p>
-                <p>Engineering</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <div className="view-people">
-              <div class="effect-text">
-          <h3>View</h3>
-
-        </div>
-              </div>
-              <div className="info-people mb-5 mt-3">
-                <p>Name</p>
-                <p>Engineering</p>
-              </div>
-            </div>
-          </div>
-          {button && <Button buttonStyle="btn--black">Read more</Button>}
+          );
+        })
+      }
+    </div>
+          {button && <Button buttonStyle="btn--black" onClick={showMore}>Read more</Button>}
         </div>
       </section>
       {/* ----------end people------------- */}
