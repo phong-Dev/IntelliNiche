@@ -3,7 +3,38 @@ import Title from "../components/Title";
 import { Button } from "../components/Button";
 import { useState } from "react";
 import GetInTouch from "../components/GetInTouch";
-import items from './allPeople'
+const items = [
+  {
+      id: 1,
+      name: 'Phong',
+      part: 'Engineering'
+  },
+  {
+      id: 2,
+      name: 'Phong',
+      part: 'Production'
+  },
+  {
+      id: 3,
+      name: 'Phong',
+      part: 'Engineering'
+  },
+  {
+      id: 4,
+      name: 'Phong',
+      part: 'Design'
+  },
+  {
+      id: 5,
+      name: 'Phong',
+      part: 'Design'
+  },
+  {
+      id: 6,
+      name: 'Phong',
+      part: 'Production'
+  }
+]
 // import Menu from "../components/Menu";
 import ButtonFilter from "../components/ButtonFilter";
 
